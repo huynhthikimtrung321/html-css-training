@@ -1,0 +1,98 @@
+.review__section {
+  width: 1440px;
+  height: 802px;
+  flex-shrink: 0;
+  background-color: var(--color-base);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+.review__header{
+  font-size: var(--font-size-max);
+  color: var(--color-secondary);
+  margin: 0;
+}
+
+.review__section--card {
+  display: flex;
+  gap: 70px;
+}
+
+.review__card--border {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.review__card--light {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+
+}
+
+.review__card--platinum {
+  background-color: var(--color-secondary);
+  color: var(--color-base);
+}
+
+.review__card--qoutes {
+  font-size: var(--font-size-giant);
+  font-style: var(--font-style-default);
+  font-weight: var(--font-weight-primary);
+  line-height: var(--line-height-default);
+  margin: 0;
+  padding-top: 10px;
+}
+
+.review__card__desription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+
+  margin: 0;
+}
+
+.review__card--person-img {
+  width: 128px;
+  height: 128px;
+  flex-shrink: 0;
+}
+
+.review__card__content {
+  display: flex;
+  flex-direction: column;
+  width: 410px;
+  height: auto;
+}
+
+.review__card--name {
+  margin-bottom: 0;
+  padding-top: 20px;
+
+}
+
+.card_name-platinum {
+  color: var(--color-primary);
+}
+
+.review__card--person {
+  display: flex;
+  align-self: flex-end;
+  width: 230px;
+  height: auto;
+}
+
+.review__footer {
+  margin-top: 20px;
+}
+
+.review__section--footer-img {
+  width: 74px;
+  height: 14px;
+  flex-shrink: 0;
+}

@@ -1,0 +1,92 @@
+.banner-section {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: repeat(3, minmax(auto, auto));
+  width: 100%;
+  bottom: 0;
+}
+
+.banner__decristion {
+  display: flex;
+  height: 600px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner__section-iphone {
+  width: 358px;
+  height: 551px;
+  align-self: end;
+  margin: 0;
+}
+
+.iphone-app-img{
+  width: 100%;
+  height: 100%;
+}
+
+.banner__sub-title {
+  display: flex;
+  color: var(--color-base);
+  text-shadow: var(--color-secondary);
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-m);
+  font-style: var(--font-style-default);
+  font-weight: var(--font-weight-primary);
+  line-height: var(--line-height-default);
+  letter-spacing: var(--letter-spacing-medium);
+  inset: 0;
+  width: 60%;
+  margin-right: none;
+}
+
+.banner__content {
+  display: flex;
+  inset: 0;
+  flex-direction: column;
+  margin-top: 10%;
+  height: 400px;
+  width: 55%;
+}
+
+.banner__title {
+  color: var(--color-base);
+  font-family: var(--font-family-primary);
+  font-size: var(--line-height-base);
+  font-style: var(--font-style-default);
+  font-weight: var(--font-weight-primary);
+  line-height: var(--line-height-medium);
+  margin: 0;
+}
+
+.banner__text {
+  display: flex;
+  color: var(--color-base);
+}
+
+.banner__app-links {
+  display: flex;
+  width: 50%;
+  height: 50px;
+  gap: 50px;
+  padding-bottom: 40px;
+}
+
+.banner__app-links--app-store {
+  width: 135px;
+  height: 40px;
+  flex-shrink: 0;
+  gap: 20px;
+}
+
+.banner__app-links--google-play {
+  width: 135px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.banner__app-links--app-store:hover,
+.banner__app-links--google-play:hover {
+  transform: scale(1.1);
+}

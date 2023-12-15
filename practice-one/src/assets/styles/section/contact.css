@@ -1,0 +1,119 @@
+.contact__section {
+  background-image: url('../../images/background-contact.png');
+  width: 100%;
+  height: 683px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact__title {
+  color: var(--color-base);
+  text-align: center;
+  font-size: var(--font-size-max);
+  font-style: var(--font-style-default);
+  font-weight: var(--font-weight-primary);
+  line-height: var(--line-height-heading);
+  letter-spacing: var(--letter-spacing-min);
+}
+
+.contact__content {
+  width: 360px;
+  height: 396px;
+  flex-shrink: 0;
+  background-color: var(--color-secondary);
+  background-image: linear-gradient(
+    224deg,
+    rgba(255, 255, 255, 0.288) 5.13%,
+    rgba(255, 255, 255, 0) 90.88%
+  );
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.contact__form--input {
+  width: 256px;
+  height: 36px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: none;
+}
+
+.contact__form--message {
+  width: 256px;
+  height: 94px;
+  border: none;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: none;
+}
+
+.contact__form--checkbox{
+  accent-color: var(--color-primary);
+}
+
+.contact__form--checkbox-text{
+  color: var(--color-base);
+  font-size: var(--font-size-m);
+  font-style: var(--font-style-default);
+  font-weight: var(--font-weight-primary);
+  line-height: var(--line-height-medium);
+}
+
+.contact__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact__address {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__address__specific {
+  color: var(--color-base);
+  text-decoration: none;
+  font-size: var(--font-size-m);
+  font-style: var(--font-style-default);
+  font-weight: var(--font-weight-primary);
+  line-height: var(--line-height-medium);
+}
+
+.contact__address__specific:hover {
+  color: var(--color-primary);
+}
+
+
+textarea::placeholder {
+  padding: 5px;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.contact__button {
+  border: none;
+}
+
+.contact__button:hover {
+  transform: scale(1.1);
+}

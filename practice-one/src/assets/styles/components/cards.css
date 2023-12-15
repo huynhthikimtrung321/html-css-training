@@ -1,0 +1,72 @@
+.card {
+  width: 554px;
+  height: 348px;
+  font-size: var(--font-size-m);
+  font-style: var(--font-style-default);
+  font-weight: var(--font-weight-primary);
+  line-height: var(--line-height-base);
+}
+
+.card-img {
+  width: 128px;
+  height: 128px;
+  flex-shrink: 0;
+}
+
+.card-name {
+  font-size: var(--font-size-l);
+  font-style: var(--font-style-default);
+  font-weight: var(--font-weight-primary);
+  line-height: var(--default-line-height);
+}
+
+.card-subs {
+  background-color: var(--color-base);
+  color: var(--color-secondary);
+  font-size: var(--font-size-m);
+  font-style: var(--font-style-default);
+  font-weight: var(--font-weight-primary);
+  line-height: 26px;
+}
+
+.card-subs-header {
+  width: 262px;
+  height: 156px;
+  flex-shrink: 0;
+  color: var(--color-base);
+  font-size: var(--font-size-l);
+  font-style: var(--font-style-default);
+  font-weight: var(--font-weight-primary);
+  line-height: var(--line-height-default);
+}
+
+.card-price {
+  width: 52px;
+  height: 78px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-shrink: 0;
+  color: var(--color-base);
+  text-align: center;
+  font-size: var(--font-size-giant);
+  font-style: var(--font-style-default);
+  font-weight: var(--font-weight-primary);
+  line-height: var(--line-height-default);
+}
+
+.card-dollar {
+  display: flex;
+  width: 28px;
+  height: 29px;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-shrink: 0;
+  color: var(--color-base);
+  text-align: center;
+  font-size: var(--font-size-l);
+  font-style: var(--font-style-default);
+  font-weight: var(--font-weight-primary);
+  line-height: var(--line-height-default);
+  letter-spacing: var(--letter-spacing-medium);
+}

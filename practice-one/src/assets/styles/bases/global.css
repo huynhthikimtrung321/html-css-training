@@ -1,0 +1,27 @@
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  inset: 0;
+}
+
+.container__main {
+  position: relative;
+  margin-top: 792px;
+
+}
+
+.text-font-family {
+  font-family: var(--font-family-primary);
+}
+
+h1 {
+  display: flex;
+  color: var(--color-primary);
+  font-size: var(--font-size-giant);
+  font-style: var(--font-style-default);
+  font-weight: var(--font-weight-primary);
+  line-height: var(--line-height-default);
+  letter-spacing: var(--letter-spacing-max);
+  padding-left: 15px;
+  margin-top: 0;
+}

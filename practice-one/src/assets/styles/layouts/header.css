@@ -1,0 +1,107 @@
+.header__section {
+  position: absolute;
+  background-image: url('../../images/Background-header.png');
+  width: 1440px;
+  height: 768px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.header__section--navbar {
+  display: flex;
+  width: 1140px;
+  height: 45px;
+  justify-content: space-between;
+  margin-top: 25px;
+  align-items: center;
+}
+
+.header__logo {
+  color: var(--color-primary);
+  text-align: center;
+  font-size: var(--font-size-xl);
+  font-style: var(--font-style-default);
+  font-weight: var(--font-weight-primary);
+  line-height: var(--line-height-default);
+  letter-spacing: var(--letter-spacing-max);
+}
+
+.header__nav__list {
+  display: flex;
+  list-style: none;
+  margin-top: 5px;
+  gap: 70px;
+}
+
+.nav__list--content {
+  color: var(--color-base);
+  text-decoration: none;
+  align-items: center;
+  font-size: var(--font-size-m);
+  font-style: var(--font-style-default);
+  font-weight: var(--font-weight-primary);
+  line-height: var(--line-height-default);
+  letter-spacing: var(--letter-spacing-medium);
+}
+
+.nav__list--content:hover {
+  color: var(--color-primary);
+}
+
+.nav__list--icon {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.icon-search {
+  width: auto;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.icon-search:hover {
+  transform: scale(1.2);
+}
+
+.list__icon--container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-select {
+  width: 5rem;
+  height: auto;
+  border-radius: 20px;
+  border: 1px solid var(--color-base);
+  text-align: center;
+  color: var(--color-base);
+  background: black;
+  appearance: none;
+  padding: 5px 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  z-index: 1;
+}
+
+.triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid var(--color-base);
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  z-index: 2
+}
+
+.nav__language {
+  position: relative;
+  display: inline-block;
+}
