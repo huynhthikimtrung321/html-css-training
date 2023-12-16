@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing Units</title>
+    <style>
+        
+        .absolute {
+            font-size: 50pt;
+
+        }
+
+        .h2_absolute {
+            font-size: 50px;
+        }
+
+        .div-absolute {
+            width: 300px;
+            height: 100px;
+            background-color: antiquewhite;
+        }
+
+        .div-absolute p {
+            margin-top: 50%;
+            padding-left: 50%;
+        }
+        .div-relative{
+            width: 15vh;
+            background-color: bisque;
+            margin-top: 1em;
+        }
+        .p-relative {
+            max-width: 60ch;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Absolute -->
+    <h1 class="absolute">CSS has several different units for expressing a length.</h1>
+    <h2 class="h2_absolute">This is heading 2</h2>
+    <div class="div-absolute">
+        <p>Both margin and padding are 150px.</p>
+    </div>
+    <!-- Relative -->
+    <div class="div-relative">
+        This div is 10% of the viewport.
+      </div>
+      <p class="p-relative">This paragraph is limited to <code>60ch</code> which is the same width as 60 “0” characters in the rendered font.</p>
+</body>
+
+</html>

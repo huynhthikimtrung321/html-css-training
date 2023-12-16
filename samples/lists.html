@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists CSS</title>
+    <style>
+        .position li {
+            background-color: aquamarine;
+        }
+        ul {
+            list-style-position: inside;
+        }
+        ol li {
+            background-color: rgb(124, 161, 149);
+        }
+        ol {
+            list-style-position: outside;
+        }
+        .img {
+            list-style-image: url("/samples/assets/images/star2.jpg");
+            text-align: center;
+        }
+        .img li {
+            font-size: 10rem;
+        }
+    </style>
+</head>
+<body>
+    <ul class="position">
+        <li>Number 1</li>
+        <li>Number 2</li>
+        <li>Number 3</li>
+        <li>Number 4</li>
+    </ul>
+    <ol>
+        <li>List 1</li>
+        <li>List 2</li>
+        <li>List 3</li>
+        <li>List 4</li>
+    </ol>
+    <ul class="img">
+        <li>Product 1</li>
+        <li>Product 2</li>
+        <li>Product 3</li>
+    </ul>
+</body>
+</html>

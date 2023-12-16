@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+        .button {
+            width: 500px;
+            height: 50px;
+        }
+
+        .button:hover {
+            cursor: pointer;
+            background-color: aquamarine;
+        }
+
+        .button:active {
+            transform: scale(0.99);
+
+        }
+
+        .btn {
+            width: 500px;
+            height: 50px;
+            background-color: aquamarine;
+        }
+
+        .btn:focus {
+            border: 2px dashed black;
+            background-color: #ebe0e0;
+        }
+
+        #target:target {
+            background-color: antiquewhite;
+        }
+
+        .tab div {
+            display: none;
+        }
+
+        .tab div:target {
+            display: block;
+        }
+
+        .btn-disable {
+            width: 500px;
+            height: 50px;
+            background-color: grey;
+            border: 2px solid black;
+        }
+
+        input:invalid {
+            border-color: red;
+        }
+        input:valid {
+            border-color: green;
+        }
+        input {
+            min-width: 320px;
+            padding: 0.5rem 1rem;
+            line-height: 1;
+            font: inherit;
+            border-radius: 0.25rem;
+        }
+        .info {
+            font-size: 0.9rem;
+            font-style: italic;
+            margin-block-start: 0.5em;
+        }
+        h1:first-child {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Pseudo Classes</h1>
+    <h1>Pseudo Classes 1</h1>
+    <div>
+        <button class="button">CLICK AND HOLDER HERE</button>
+        <button class="btn">BUTTON FOCUS</button>
+        <button class="btn-disable" disabled>BUTTON DISABLE STATE</button>
+    </div>
+    <div class="tab">
+        <a href="#link1">Link 1</a>
+        <a href="#link2">Link 2</a>
+        <a href="#link3">Link 3</a>
+        <div id="link1">
+            <h2>Content to link 1</h2>
+        </div>
+        <div id="link2">
+            <h2>Content to link 2</h2>
+        </div>
+        <div id="link3">
+            <h2>Content to link 3</h2>
+        </div>
+    </div>
+    <form action="">
+        <label for="email">Address Email</label>
+        <input type="email" id="email" required placeholder="Enter email" aria-describedby="emailinfo">
+        <p class="info" id="emailinfo">Add a valid email address to see the state change</p>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+    <style>
+        span {
+            color: red;
+        }
+
+        .selector {
+            font-size: 1.4rem;
+            background-color: blue;
+            color: aliceblue;
+        }
+
+        .red {
+            color: #f33;
+        }
+
+        .yellow-bg {
+            background: #ffa;
+        }
+
+        .fancy {
+            font-weight: bold;
+            text-shadow: 4px 4px 3px #77f;
+        }
+        a[target="_blank"] {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <span>Helo Kim Trung</span>
+    <div class="selector">Class selector</div>
+    <p class="red">This paragraph has red text.</p>
+    <p class="red yellow-bg">
+        This paragraph has red text and a yellow background.
+    </p>
+    <p class="red fancy">This paragraph has red text and "fancy" styling.</p>
+    <p>This is just a regular paragraph.</p>
+    <h2>Attribute selector</h2>
+    <a href="http://www.wikipedia.org" target="_blank">wikipedia.org</a>
+    
+</body>
+
+</html>

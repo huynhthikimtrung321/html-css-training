@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gird</title>
+    <style>
+        #main {
+            display: grid;
+            /* grid-template-columns: 33.3% 33.3% 33.3%; */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, minmax(50px, auto));
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        #main div {
+            background-color: rgb(182, 29, 29);
+            padding: 30px;
+        }
+
+        #main div:nth-child(even) {
+            background-color: rgb(18, 74, 122);
+            padding: 30px;
+        }
+
+        .one {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        #layout {
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px;
+            grid-template-areas: 
+            "header header header header"
+            "aside main main main"
+            "nav main main main"
+            "section section section section"
+            "section section section section"
+            "footer footer footer footer";
+            text-align: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        #layout >*{
+            background-color: brown;
+            padding: 30px;
+        }
+        header {
+            grid-area: header;
+        }
+        main {
+            grid-area: main;
+        }
+        section {
+            grid-area: section;
+        }
+        aside {
+            grid-area: aside;
+        }
+        nav {
+            grid-area: nav;
+        }
+        footer {
+            grid-area: footer;
+        }
+
+    </style>
+</head>
+<!-- Grid column and row-->
+<h1>Using CSS grid</h1>
+<div id="main">
+    <div class="one">1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+</div>
+<h2>Layout web</h2>
+<div id="layout">
+    <header>Header</header>
+    <main>Main</main>
+    <section>Section</section>
+    <aside>Aside</aside>
+    <nav>Nav</nav>
+    <footer>Footer</footer>
+</div>
+</body>
+
+</html>

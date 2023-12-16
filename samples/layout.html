@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main {
+            height: 400px;
+            width: 400px;
+            border: 2px solid #c3c3c3;
+            display: flex;
+        }
+
+        #main div {
+            height: 50px;
+            width: 50px;
+        }
+
+        .a {
+            display: contents;
+            border: 1px solid red;
+            background-color: lightgrey;
+            padding: 10px;
+            width: 200px;
+        }
+        .b {
+            background-color: rgb(34, 111, 114);
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div style="background-color: aquamarine;">A</div>
+        <div style="background-color: rgb(127, 255, 138);">B</div>
+        <div style="background-color: rgb(9, 78, 55);">C</div>
+        <div style="background-color: rgb(255, 225, 127);">D</div>
+        <div style="background-color: rgb(255, 127, 133);">E</div>
+    </div>
+    <h1>The display Property</h1>
+
+    <h2>display: contents:</h2>
+    <div class="a">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis
+        blandit. <div class="b">HELLO WORLD!</div> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+    </div>
+
+</body>
+
+</html>
