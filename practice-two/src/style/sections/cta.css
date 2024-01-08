@@ -1,0 +1,68 @@
+.cta {
+  background-color: var(--color-primary);
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+.cta__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.cta__header {
+  width: 213px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+}
+
+.cta__text {
+  text-align: center;
+}
+
+.cta__input {
+  width: 220px;
+  height: 36px;
+  border: none;
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.4);
+}
+
+.cta__form {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.cta__button {
+  padding: 15px 20px;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+@media (min-width: 768px) {
+  .cta__header {
+    width: 286px;
+  }
+
+}
+
+@media (min-width: 1440px) {
+  .cta__wrapper {
+    gap: 30px;
+  }
+
+  .cta__header {
+    width: 485px;
+    gap: 23px;
+  }
+
+  .cta___input {
+    width: 230px;
+    height: 45px;
+  }
+}

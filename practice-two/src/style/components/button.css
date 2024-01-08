@@ -33,6 +33,14 @@
   opacity: 0.8;
 }
 
+input::placeholder {
+  padding-left: 10px;
+}
+
+input:focus {
+  outline: none;
+}
+
 @media (min-width: 1440px) {
   .btn {
     border-radius: 35px;
